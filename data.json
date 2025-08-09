@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Mercedes-Benz Sprinter",
+    "type": "Товарни",
+    "make": "Mercedes-Benz",
+    "model": "Sprinter",
+    "price_eur": 32000,
+    "year": 2020,
+    "mileage_km": 90000,
+    "is_vip": true,
+    "location": "Пловдив",
+    "cover_url": "https://images.unsplash.com/photo-1593941707874-ef25b8b4217e?q=80&w=1480&auto=format&fit=crop"
+  },
+  {
+    "title": "Volkswagen Transporter",
+    "type": "Товарни",
+    "make": "Volkswagen",
+    "model": "Transporter",
+    "price_eur": 24500,
+    "year": 2018,
+    "mileage_km": 120000,
+    "is_vip": false,
+    "location": "София",
+    "cover_url": "https://images.unsplash.com/photo-1607419726992-fd6b5c3e8b8a?q=80&w=1480&auto=format&fit=crop"
+  }
+]

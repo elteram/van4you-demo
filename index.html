@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Van4You — Demo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="logo">Van4You</div>
+    <div class="controls">
+      <select id="langSelect">
+        <option value="bg" selected>BG</option>
+        <option value="en">EN</option>
+      </select>
+      <select id="currencySelect">
+        <option value="EUR" selected>EUR €</option>
+        <option value="BGN">BGN лв.</option>
+      </select>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="search">
+      <div class="field"><label>Тип</label><select id="type">
+        <option value="">—</option>
+        <option>Товарни</option><option>Пътнически</option><option>Кемпери</option><option>Електрически</option><option>Специализирани</option>
+      </select></div>
+      <div class="field"><label>Марка</label><input id="make" /></div>
+      <div class="field"><label>Модел</label><input id="model" /></div>
+      <div class="field"><label>Град</label><input id="city" /></div>
+      <div class="field"><label>Цена (мин/макс)</label><div class="row">
+        <input id="priceMin" type="number" /><input id="priceMax" type="number" />
+      </div></div>
+      <div class="field"><label>Година (мин/макс)</label><div class="row">
+        <input id="yearMin" type="number" /><input id="yearMax" type="number" />
+      </div></div>
+      <div class="field"><label>Километри (мин/макс)</label><div class="row">
+        <input id="kmMin" type="number" /><input id="kmMax" type="number" />
+      </div></div>
+      <div class="field checkbox"><label><input id="vipOnly" type="checkbox" /> Само VIP</label></div>
+      <button id="searchBtn" class="btn">Търси</button>
+      <button id="clearBtn" class="btn ghost">Изчисти</button>
+    </section>
+
+    <section>
+      <h2>Нови обяви</h2>
+      <div id="grid" class="grid"></div>
+    </section>
+  </main>
+
+  <template id="cardTpl">
+    <article class="card">
+      <div class="vip" hidden>VIP</div>
+      <img class="cover" alt="cover" />
+      <div class="info">
+        <h3 class="title"></h3>
+        <div class="meta">
+          <span class="price"></span>
+          <span class="dot">•</span>
+          <span class="year"></span>
+          <span class="dot">•</span>
+          <span class="km"></span>
+        </div>
+        <div class="city"></div>
+      </div>
+    </article>
+  </template>
+
+  <script src="app.js"></script>
+</body>
+</html>
